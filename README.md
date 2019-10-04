@@ -26,7 +26,7 @@ $contentItem = $hfgContentApi->getContentById(1); // get content item by id
 $contentItem = $hfgContentApi->getContentBySlug('content-slug'); // get content item by slug
 ```
 
-When getting multiple items, you receive an array of content items. Here's an exmple of what a content item looks like:
+When getting multiple items, you receive an array of content items. Here's an example of what a content item looks like:
 
 ```
 {
@@ -54,4 +54,4 @@ The 'content_html' property is the suggested HTML for the content, however we al
 
 Including the raw 'content' data allows you to build out the HTML any way you wish.
 
-No CSS is included with thesuggested HTML, therefore you will need to add the styling to the HTML yourself.
+No CSS is included with the suggested HTML, therefore you will need to add the styling to the HTML yourself.
