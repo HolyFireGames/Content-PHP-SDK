@@ -28,7 +28,6 @@ class HFG__Content__API {
 
     private function callApi($path, $data = false) {
         $ch = curl_init();
-//        debug($this->apiUrlRoot . $path);
         $url = $this->apiUrlRoot . $path;
         if ($data && !empty($data)) {
             $url .= '?' . $data;
@@ -42,7 +41,6 @@ class HFG__Content__API {
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         $returnData = curl_exec($ch);
-//        debug($returnData);
         if (curl_errno($ch)) {
             $this->error = curl_error($ch);
         }
